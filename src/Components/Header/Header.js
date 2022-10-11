@@ -19,7 +19,7 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <NavLink to={"/home"} className={({isActive})=> isActive? 'active': undefined}>Home</NavLink>
+          <NavLink to={"/"} className={({isActive})=> isActive? 'active': undefined}>Home</NavLink>
           <NavLink to={"/blogs"} className={({isActive})=> isActive? 'active': undefined}>Blogs</NavLink>
           <NavLink to={"/statics"} className={({isActive})=> isActive? 'active': undefined}>Statics</NavLink>
         </Navbar.Collapse>
