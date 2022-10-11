@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-<h1 className='text-blue-500 font-mono font-bold text-2xl'> hello I am for testing tailwind css setup</h1>
+      <Header></Header>
     </div>
   );
 }
