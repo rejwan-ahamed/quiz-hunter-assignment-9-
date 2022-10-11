@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -18,10 +19,9 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Link to={'/'}>Home</Link>
-          <Link to={'/blogs'}>Blogs</Link>
-          <Link to={'/statics'}>Statics</Link>
-          
+          <NavLink to={"/home"} className={({isActive})=> isActive? 'active': undefined}>Home</NavLink>
+          <NavLink to={"/blogs"} className={({isActive})=> isActive? 'active': undefined}>Blogs</NavLink>
+          <NavLink to={"/statics"} className={({isActive})=> isActive? 'active': undefined}>Statics</NavLink>
         </Navbar.Collapse>
       </Navbar>
     </div>

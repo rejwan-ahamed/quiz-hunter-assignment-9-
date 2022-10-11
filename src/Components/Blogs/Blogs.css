@@ -1,0 +1,5 @@
+@media (min-width: 200px) and (max-width: 550px) { 
+    .questions-main{
+        padding: 0 2rem;
+    }
+}

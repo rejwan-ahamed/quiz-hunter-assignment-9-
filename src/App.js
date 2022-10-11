@@ -20,8 +20,17 @@ function App() {
             return await fetch("https://openapi.programming-hero.com/api/quiz");
           },
         },
+        {
+          path: "/home",
+          element: <Main></Main>,
+          loader: async () => {
+            return await fetch("https://openapi.programming-hero.com/api/quiz");
+          },
+        },
         { path: "/blogs", element: <Blogs></Blogs> },
-        { path: "/statics", element: <Statics></Statics> },
+        { path: "/statics", element: <Statics></Statics>, loader: async () => {
+          return await fetch("https://openapi.programming-hero.com/api/quiz");
+        }, },
         {
           path: "/questions/:id",
           loader: async ({ params }) => {

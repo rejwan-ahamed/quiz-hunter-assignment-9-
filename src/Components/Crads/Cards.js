@@ -5,8 +5,8 @@ const Cards = ({quiz}) => {
   console.log(quiz)
   const {id,name,logo,total} = quiz
   return (
-    <div className=" flex gap-4 p-8">
-      <div className="max-w-sm bg-blue-200 rounded-lg border-2 border-blue-900 shadow-md">
+    <div className=" flex gap-4 p-8 md:p-1 xl:p-8">
+      <div className="max-w-sm bg-blue-200 rounded-lg border-2 border-blue-900 shadow-md xl:max-w-sm ">
         <div>
           <img
             className="rounded-t-lg border-b-2 border-blue-900"

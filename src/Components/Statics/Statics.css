@@ -1,0 +1,15 @@
+.chart-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+
+@media (min-width: 200px) and (max-width: 500px) { 
+
+    .LineChart-main{
+        width: 250px !important;
+        height: 400px !important;
+    }
+ }

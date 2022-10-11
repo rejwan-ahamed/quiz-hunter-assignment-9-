@@ -8,7 +8,7 @@ const Main = () => {
   //   console.log(data);
   return (
     <div>
-      <div className="hero-main flex items-center justify-between">
+      <div className="hero-main block items-center justify-between md:flex">
         <div className="hero-left">
           <img src="/images/1.png" className=" hero-image" alt="" srcset="" />
         </div>
@@ -22,7 +22,7 @@ const Main = () => {
           </h1>
         </div>
       </div>
-      <div className="card-main grid grid-cols-4">
+      <div className="card-main grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 md:mt-10 md:mb-10 lg:grid-col-4">
         {data.data.map((quizes) => (
           <Cards quiz={quizes} key={data.id}></Cards>
         ))}
