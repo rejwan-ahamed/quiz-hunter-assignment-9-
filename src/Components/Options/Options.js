@@ -1,9 +1,9 @@
 import React from "react";
 
-const Options = ({ops,ID}) => {
+const Options = ({ops,ID,handler}) => {
   return (
     <div>
-      <li>
+      <li onClick={()=>handler(ops)}>
         <input
           type="radio"
           id={ops}

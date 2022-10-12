@@ -1,15 +1,19 @@
-.chart-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
+.chart-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
 }
 
+@media (min-width: 200px) and (max-width: 500px) {
+  .LineChart-main {
+    width: 250px !important;
+    height: 400px !important;
+  }
+}
 
-@media (min-width: 200px) and (max-width: 500px) { 
-
-    .LineChart-main{
-        width: 250px !important;
-        height: 400px !important;
+@media (min-width: 100px) and (max-width: 300px) {
+    svg.recharts-surface {
+        width: 300px !important;
     }
- }
+}
