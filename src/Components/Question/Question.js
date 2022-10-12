@@ -28,7 +28,7 @@ const Question = ({ ques }) => {
           </p>
         ) : undefined}
       </div>
-      <h3 class="mb-5 text-lg font-bold font-mono text-gray-900 dark:text-white mt-12">
+      <h3 class="mb-5 text-lg font-bold font-mono text-gray-900 ">
         {question}
       </h3>
       <ul class="grid gap-6 w-full md:grid-cols-2 lg:px-10 font-mono mt-12">
