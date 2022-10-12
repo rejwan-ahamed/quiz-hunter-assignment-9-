@@ -1,16 +1,48 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const Options = ({ops,ID,handler}) => {
+import "react-toastify/dist/ReactToastify.css";
+const Options = ({ ops, ID, correct }) => {
+  const handler = (event) => {
+    console.log(correct);
+
+    if (event.target.value === correct) {
+      toast.success("Your ans is correct", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else {
+      toast.error("Your ans is wrong", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
   return (
     <div>
-      <li onClick={()=>handler(ops)}>
+
+      <li >
         <input
           type="radio"
           id={ops}
           name={ID}
           value={ops}
+          key={ID}
           class="hidden peer"
           required=""
+          onClick={(event) => handler(event)}
         />
         <label
           for={ops}

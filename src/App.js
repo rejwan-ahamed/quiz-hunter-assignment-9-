@@ -7,6 +7,10 @@ import Statics from "./Components/Statics/Statics";
 import Questions from "./Components/Questions/Questions";
 import NotFound from "./Components/NotFound/NotFound";
 
+import { ToastContainer} from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   const routs = createBrowserRouter([
     {
@@ -47,6 +51,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={routs}></RouterProvider>
+      <ToastContainer />
     </div>
   );
 }

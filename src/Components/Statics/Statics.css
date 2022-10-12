@@ -12,8 +12,13 @@
   }
 }
 
-@media (min-width: 100px) and (max-width: 300px) {
-    svg.recharts-surface {
-        width: 300px !important;
-    }
+@media (max-width: 576px) {
+  .recharts-surface{
+    width: 300px !important;
+    margin-left: -3rem;
+  }
+
+  .recharts-legend-wrapper {
+  display: none;
+}
 }
