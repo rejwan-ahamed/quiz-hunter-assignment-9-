@@ -10,10 +10,9 @@ My project name is <b>Quiz Hunter</b>. My project is about quiz contest. Here fo
 
 ### Live website link
 
-live website: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
+live website: https://6346b1fe635e8e76a25c6eb7--aquamarine-daffodil-a674f7.netlify.app/
 
 ### Project source code link
 
-source code: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+source code: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-rejwan-ahamed
 
